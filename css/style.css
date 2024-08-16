@@ -13,6 +13,8 @@ body {
 
 .app {
   display: flex;
+  width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -67,8 +69,9 @@ body {
 
 .skill-slider {
   width: 100%;
+  height: 300px;
   padding: 20px 2px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .slider-main {
@@ -118,8 +121,8 @@ a {
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,10 +132,9 @@ a {
   text-align: center;
   font-size: 18px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: transparent;
-  padding: 20px;
 }
 
 .swiper-slide img {
@@ -143,7 +145,10 @@ a {
 
 .respo-gif {
   width: 100%;
-  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .respo-img {
@@ -164,10 +169,11 @@ a {
   width: 100%;
   background-blend-mode: soft-light;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .respo-img > img{
@@ -182,13 +188,12 @@ a {
 
 .para > p {
   font-weight: 900;
+  margin: 10px 0px;
 }
 
 .sli-main{
-
-  width: 100%;
-  height: 100%;
-
+  width: 300px;
+  /* height: 200px; */
 }
 
 .footer {
@@ -218,13 +223,26 @@ a > i {
   font-size: 25px;
 }
 
-@media (max-width:768px) {
- body {
+@media (max-width:425px) {
+  body {
     width: 320px;
-
   }
 
   .top {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:768px) {
+ body {
+    width: 320px;
+  }
+
+  .top {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
