@@ -9,6 +9,7 @@ body {
   width: 480px;
   margin: auto;
   height: 100vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .app {
@@ -196,6 +197,9 @@ a {
   /* height: 200px; */
 }
 
+footer {
+  width: 100%;
+}
 .footer {
   width: 100%;
   display: flex;
@@ -236,9 +240,9 @@ a > i {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:551px) {
  body {
-    width: 320px;
+    width: 100%;
   }
 
   .top {
